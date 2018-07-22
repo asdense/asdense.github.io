@@ -229,6 +229,126 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="//asdense.github.io/2018/07/22/Python-Class/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CrazyCat">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="永遠的菜鳥工程師">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/22/Python-Class/" itemprop="url">Python_Class</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-07-22T10:51:23+08:00">
+                2018-07-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Class"><a href="#Class" class="headerlink" title="Class"></a>Class</h3><p>請注意Python跟C系列的不同。<br>它的@classmethod、@staticmethod用法，還有MemberData的使用。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class ClassObject():</span><br><span class="line">    count = 0 <span class="comment"># 共用</span></span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.countFail = 1 <span class="comment"># 自己的變數 </span></span><br><span class="line">        ClassObject.count += 1</span><br><span class="line"></span><br><span class="line">    @classmethod</span><br><span class="line">    def kids(cls): </span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"A has"</span>,cls.count, <span class="string">"little objects."</span>)</span><br><span class="line"></span><br><span class="line">    @staticmethod</span><br><span class="line">    def commercial():</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'This coyoteWeapon has been brought to you by Acme'</span>)</span><br><span class="line"></span><br><span class="line">A = ClassObject()</span><br><span class="line">B = ClassObject()</span><br><span class="line">C = ClassObject()</span><br><span class="line">ClassObject.kids()</span><br><span class="line"></span><br><span class="line">ClassObject.commercial()</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="//asdense.github.io/2018/07/21/hexo-github/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -519,7 +639,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">文章</span>
                 </a>
               </div>
@@ -532,7 +652,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">標籤</span>
                 </a>
               </div>
